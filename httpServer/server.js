@@ -1,7 +1,7 @@
 const http = require("http");
 
 const server = http.createServer((request, response) => {
-  // we process request and response here
+  // process request and response here
   const { method, url, headers } = request;
   const userAgent = headers["user-agent"];
   console.log(userAgent);
